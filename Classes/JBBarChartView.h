@@ -16,6 +16,7 @@
 
 @property (nonatomic, weak) id<JBBarChartViewDelegate> delegate;
 @property (nonatomic, weak) id<JBBarChartViewDataSource> dataSource;
+@property (nonatomic) int staticBarWidth;
 
 /**
  *  Vertical highlight overlayed on bar during touch events.

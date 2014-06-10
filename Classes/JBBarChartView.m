@@ -284,6 +284,9 @@ static UIColor *kJBBarChartViewDefaultBarColor = nil;
 
 - (CGFloat)barWidth
 {
+    if (self.staticBarWidth > 0) {
+        return self.staticBarWidth;
+    }
     NSUInteger barCount = [[self.chartDataDictionary allKeys] count];
     if (barCount > 0)
     {
